@@ -11,9 +11,9 @@
 
 with source_data as (
 
-    select 1 as id from dbc.dbcinfo
-    union
-    select null as id  from dbc.dbcinfo
+    select distinct 1 as id from dbc.dbcinfo
+    union all
+    select distinct  null as id  from dbc.dbcinfo
 
 )
 
